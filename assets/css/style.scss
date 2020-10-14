@@ -1,0 +1,144 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,500,700";
+
+//
+// Variables
+//
+
+$root-font-size: 100%;
+$base-font-size: 16px;
+
+// Branding (todo: clean up)
+$color-1: #3fb764;
+$color-2: #008aeb;
+$color-3: #4d4d4d;
+$color-4: #17a956;
+$color-5: #1155cb;
+$color-6: #2b303b;
+$color-7: #eaecef;
+$color-8: #ff5d8c;
+$color-9: #1b1326;
+$color-10: #c6bcd3;
+$color-11: #4e1999;
+$color-12: #b6b1e3;
+$color-13: #290b53;
+
+$gray-1: #fdfdfd;
+$gray-2: #bfbfbf;
+$gray-3: lighten(#949494, 22);
+$gray-4: #e1e1e1;
+$gray-5: #49494b;
+$gray-6: #f7f8f9;
+$gray-7: #4b4f59;
+$gray-8: #e5eaed;
+
+$navy: #062f4d;
+$navy-alt: #20242C;
+$navy-light: lighten($navy-alt, 74);
+$sky: #e6edfa;
+$sky-light: #f1f5fc;
+
+$green-base: #3fa66a;
+$green-dark: #318153;
+$green-light: #e7f6ee;
+$pale-blue: #f5f8fc;
+$pale-blue-2: #668295;
+
+// 
+// Fonts
+// 
+
+// Fallback system fonts
+
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// Custom fonts
+
+$roboto-mono-regular: 'Roboto Mono Regular';
+$roboto: 'Roboto';
+
+// Base fonts and their fallbacks
+
+$base-font-family: $roboto, $sans-serif;
+$base-heading-font-family: $roboto, $sans-serif;
+$base-mono-family: $roboto-mono-regular, $monospace;
+
+// Font weights
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+// Page
+
+.markdown-body {
+  $container-spacing: 5rem;
+  $font-size-h1: 1.875rem;
+  $font-size-h2: 1.625rem;
+  $font-size-h3: 1.188rem;
+  $logo-max-width: 450px;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Base
+
+  font-size: $base-font-size;
+  font-style: normal;
+  line-height: 2.4;
+
+  // Type
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $base-heading-font-family;
+    border-bottom-color: $gray-8;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: $fw-medium;
+  }
+
+  h5, h6 {
+    font-weight: $fw-bold;
+  }
+
+  h1 {
+    font-size: $font-size-h1;
+  }
+
+  h2 {
+    font-size: $font-size-h2;
+  }
+
+  h3 {
+    font-size: $font-size-h3;
+  }
+
+  // main logo that acts as a header
+  img[src*="logo"] {
+    display: block;
+    margin: 0 auto;
+    max-width: $logo-max-width;
+    height: auto;
+  }
+
+  h1:first-of-type {
+    text-align: center;
+    margin-bottom: $container-spacing;
+    color: $navy;
+    border: 0;
+  }
+
+  .footer {
+    margin-top: $container-spacing !important;
+    text-align: center !important;
+    padding: 5rem 0 !important;
+    border-top-color: $color-7 !important;
+  }
+}

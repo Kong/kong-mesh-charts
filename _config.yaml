@@ -1,0 +1,4 @@
+theme: jekyll-theme-primer
+name: Kong Mesh Charts
+description: Kong Mesh Helm Repository
+exclude: [DEVELOPER.md, Gemfile, Gemfile.lock]
