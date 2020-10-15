@@ -2,6 +2,8 @@
 
 # Kong Mesh Helm Charts
 
+[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/kong-mesh)](https://artifacthub.io/packages/search?repo=kong-mesh)
+
 ## Add the Kong Mesh Helm repository
 
 ```sh
