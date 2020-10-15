@@ -8,14 +8,26 @@
 helm repo add kong-mesh https://kong.github.io/kong-mesh-charts
 ```
 
-## Install Kong Mesh with Helm
+## Installing Kong Mesh using the Helm Charts
 
+Create the `kong-mesh-system` namespace:
 ```sh
-helm upgrade -i kong-mesh kong-mesh/kong-mesh
+kubectl create namespace kong-mesh-system
 ```
-## Source Code
 
-The charts are published in this repo's [gh-pages branch](https://github.com/kong/kong-mesh-charts/tree/gh-pages)
+Upload the license secret to the cluster:
+```sh
+kubectl create secret generic kong-mesh-license -n kong-mesh-system --from-file=/path/to/license.json
+```
+
+NOTE: The name of the file *should* be `license.json`, unless otherwise specified in `values.yaml`.
+
+Deploy the Kong Mesh Helm Chart:
+```sh
+helm upgrade -i -n kong-mesh-system kong-mesh kong-mesh/kong-mesh
+```
+
+## Artifact Hub
 
 Artifact Hub references to these charts at https://artifacthub.io/packages/helm/kong-mesh/kong-mesh
 
