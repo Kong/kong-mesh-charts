@@ -26,6 +26,7 @@ NOTE: The name of the file *should* be `license.json`, unless otherwise specifie
 
 Deploy the Kong Mesh Helm Chart:
 ```sh
+helm repo update
 helm upgrade -i -n kong-mesh-system kong-mesh kong-mesh/kong-mesh
 ```
 
