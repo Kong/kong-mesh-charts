@@ -2,6 +2,29 @@ apiVersion: v1
 entries:
   kong-mesh:
   - apiVersion: v2
+    appVersion: 2.6.5
+    created: "2024-04-08T21:08:00.313790822Z"
+    dependencies:
+    - name: kuma
+      repository: https://kumahq.github.io/charts
+      version: 2.6.5
+    description: A Helm chart for Kong Mesh
+    digest: bb7a52c0e646c5e4d39f6b450c54e2e83f6e79d83584752dad887750275c3a9b
+    home: https://docs.konghq.com/mesh/
+    icon: https://github.com/Kong/kong-mesh-charts/raw/master/artifacts/kong-mesh-square.png
+    keywords:
+    - Kong
+    - service mesh
+    - control plane
+    maintainers:
+    - email: jakub.dyszkiewicz@konghq.com
+      name: jakubdyszkiewicz
+    name: kong-mesh
+    type: application
+    urls:
+    - https://github.com/Kong/kong-mesh-charts/releases/download/kong-mesh-2.6.5/kong-mesh-2.6.5.tgz
+    version: 2.6.5
+  - apiVersion: v2
     appVersion: 2.6.4
     created: "2024-04-02T20:06:19.28901146Z"
     dependencies:
@@ -2567,4 +2590,4 @@ entries:
     urls:
     - https://github.com/Kong/kong-mesh-charts/releases/download/kong-mesh-0.1.0/kong-mesh-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-02T20:06:19.290457973Z"
+generated: "2024-04-08T21:08:00.315033973Z"
